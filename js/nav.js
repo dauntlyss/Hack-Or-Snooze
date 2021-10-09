@@ -23,6 +23,16 @@ function navLoginClick(evt) {
   $signupForm.show();
 }
 
+/**Runs when users click the navbar link */
+
+function submitStory(evt) {
+  console.debug("navSubmitStoryClick", evt);
+  hidePageComponents();
+  $allStoriesList.show();
+  $addStoryForm.show();
+}
+$submit.on("click", submitStory);
+
 $navLogin.on("click", navLoginClick);
 
 /** When a user first logins in, update the navbar to reflect that. */

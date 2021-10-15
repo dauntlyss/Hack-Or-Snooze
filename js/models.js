@@ -79,8 +79,8 @@ class StoryList {
       data: { token, story: { author, title, url } },
     });
 
-    const story = new Story(response.data.story);
-    return story;
+    // const story = new Story(response.data.story);
+    // return story;
   }
 }
 
